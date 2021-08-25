@@ -1,0 +1,36 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header mode='ios'>
+  <ion-navbar mode='ios' text-center color="primary">
+    <ion-title>Home</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only style="color: white;" (click)="onClickLogout()">
+        <ion-icon name="log-out"></ion-icon>
+      </button>
+      </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card class="txtcenter">
+
+    <ion-item>
+      <h2>{{userData?.User_Fname}} {{userData?.User_LName}}</h2>
+      <p>{{userData?.User_Emai}}</p>
+    </ion-item>
+  <ion-item>
+    <h2 item-start>Account type: </h2>
+    <p item-end>{{strAccountType}}</p>
+  </ion-item>
+
+  <button ion-button icon-only class="btnAccount" (click)="upgradeAccount()">
+    {{strBtn}}
+  </button>
+  </ion-card>
+
+</ion-content>

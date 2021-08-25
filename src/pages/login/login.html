@@ -1,0 +1,37 @@
+<ion-header mode="ios">
+  <ion-navbar text-center color="primary">
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="topCard">
+    <ion-col col-12 text-center padding-bottom>
+      <h1 class="titletext">Demo App</h1>
+    </ion-col>
+  </ion-row>
+  <ion-card mode="md" no-margin class="bottomCard">
+    <ion-row>
+      <ion-col col-12 text-center padding-bottom padding-top>
+        <h1 ion-text color="primary"> Login to continue </h1>
+      </ion-col>
+      <ion-col col-12 padding-left padding-right margin-bottom>
+        <ion-input mode="md" type="email" class="customItemLogin" [(ngModel)]='loginDetails.UserName'
+          placeholder="Email">
+        </ion-input>
+      </ion-col>
+      <ion-col col-12 padding-left padding-right margin-bottom>
+        <ion-input type="password" mode="md" class="customItemLogin" [(ngModel)]='loginDetails.Password'
+          placeholder="Password">
+        </ion-input>
+      </ion-col>
+      <ion-col text-center col-12>
+        <button ion-button round color="primary" class="submitButton" (click)="login()">Login</button>
+      </ion-col>
+      <ion-col text-center col-12>
+        <button ion-button clear color="primary" mode="ios" (click)="onClick()"> Don't have an account? &nbsp;<b>
+            Register Now</b></button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>

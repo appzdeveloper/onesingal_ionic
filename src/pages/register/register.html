@@ -1,0 +1,46 @@
+<ion-header mode="ios">
+  <ion-navbar text-center color="primary">
+    <ion-title mode="ios"></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="topCard">
+    <ion-col col-12 text-center padding-bottom>
+      <h1 class="titletext">Demo App</h1>
+    </ion-col>
+  </ion-row>
+  <ion-card mode="md" no-margin class="bottomCard">
+    <ion-row>
+      <ion-col col-12 text-center padding-bottom padding-top>
+        <h1 ion-text color="primary"> Create an Account </h1>
+      </ion-col>
+      <ion-col col-12 padding-left padding-right margin-bottom>
+        <ion-input mode="md" type="text" class="customItemLogin" [(ngModel)]='registerDetails.User_Fname' placeholder="First Name">
+        </ion-input>
+      </ion-col>
+      <ion-col col-12 padding-left padding-right margin-bottom>
+        <ion-input mode="md" type="text" class="customItemLogin" [(ngModel)]='registerDetails.User_LName' placeholder="Last Name">
+        </ion-input>
+      </ion-col>
+      <ion-col col-12 padding-left padding-right margin-bottom>
+        <ion-input mode="md" type="email" class="customItemLogin" [(ngModel)]='registerDetails.User_Emai' placeholder="Email">
+        </ion-input>
+      </ion-col>
+      <ion-col col-12 padding-left padding-right margin-bottom>
+        <ion-input mode="md" type="password" class="customItemLogin" [(ngModel)]='registerDetails.User_Password'
+          placeholder="Password">
+        </ion-input>
+      </ion-col>
+
+      <ion-col col-12 padding-left padding-right margin-bottom>
+        <ion-input mode="md" type="password" class="customItemLogin" [(ngModel)]='registerDetails.confirmPassword'
+          placeholder="Confirm Password">
+        </ion-input>
+      </ion-col>
+      <ion-col text-center col-12>
+        <button ion-button round color="primary" class="submitButton" (click)="registerUSer()">Submit</button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>

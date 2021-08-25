@@ -1,0 +1,5 @@
+{
+    "Security.framework": 1,
+    "SystemConfiguration.framework": 2,
+    "WebKit.framework": 1
+}
